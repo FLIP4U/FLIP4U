@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLIP4U Property Management</title>
+  <style>
+    :root {
+      --black: #000000;
+      --silver: #C0C0C0;
+      --turquoise: #30BFBF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--black);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--turquoise);
+    }
+
+    .hero {
+      background: var(--turquoise);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+    }
+
+    .section h2 {
+      color: var(--turquoise);
+      margin-bottom: 1rem;
+    }
+
+    .properties, .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--silver);
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 250px;
+    }
+
+    footer {
+      background-color: var(--black);
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--black);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      background: var(--turquoise);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FLIP4U</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Modern Property Management with a Flip</h2>
+    <p>Your trusted partner in maximizing rental value, tenant satisfaction, and real estate investments.</p>
+    <a href="#contact" class="button">Get in Touch</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>FLIP4U is dedicated to transforming the property management experience. With a focus on efficiency, innovation, and client satisfaction, we deliver top-tier service for both property owners and tenants.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Full-service property management</li>
+      <li>Tenant placement and screening</li>
+      <li>Maintenance and renovations</li>
+      <li>Rent collection and reporting</li>
+    </ul>
+  </section>
+
+  <section id="properties" class="section">
+    <h2>Available Properties</h2>
+    <div class="properties">
+      <div class="card">
+        <h3>123 Elm Street</h3>
+        <p>2 bed, 1 bath - $1,500/month</p>
+      </div>
+      <div class="card">
+        <h3>456 Oak Avenue</h3>
+        <p>3 bed, 2 bath - $2,100/month</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@flip4u.com<br>Phone: (123) 456-7890</p>
+    <a href="mailto:info@flip4u.com" class="button">Email Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FLIP4U. All rights reserved.</p>
+  </footer>
+</body>
+</html>
